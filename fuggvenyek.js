@@ -62,16 +62,15 @@ export function poziciok() {
     let lep1 = lep1Elem.value;
     let lep2 = lep2Elem.value;
     console.log(lep1, lep2);
-    utesEllenorzes(lep1, lep2);
-    
+    kiiras(utesEllenorzes(lep1, lep2));
   });
 }
 
 export function utesEllenorzes(lep1, lep2) {
   let o1 = lep1[0];
-  let s1 = lep1[1];
+  let s1 = parseInt(lep1[1]);
   let o2 = lep2[0];
-  let s2 = lep2[1];
+  let s2 = parseInt(lep2[1]);
 
   switch (o1) {
     case "a":
@@ -138,4 +137,6 @@ export function utesEllenorzes(lep1, lep2) {
   }
 }
 
-
+export function kiiras(fuggveny) {
+    console.log(fuggveny);
+}
